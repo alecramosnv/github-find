@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>People Finder for GitHub</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.2/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/find.js"></script>
+</head>
+<body>
+
+	<div class="container main">
+		<div class="row">
+			<div class="col-xs-1"></div>
+			<div class="col-xs-10">
+				<h1>GitHub People Finder</h1>
+				<hr>
+				<div class="row">
+					<div class="col-xs-9">
+						<input type="text" id="githubName" placeholder="Enter a GitHub name" class="form-control">
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-success btn-block" id="search">Search</button>
+					</div>
+				</div>
+				<hr>
+				<div class="row" id="result">
+					
+					<div class="col-xs-6">
+						<img src="" id="avatar" class="img img-circle">
+						<h1 id="name"></h1>
+						<h3 id="username"></h3>
+						<h6>Following: <span class="label label-primary" id="following"></span></h6>
+						<h6>Followers: <span class="label label-success" id="followers"></span></h6>
+						<p id="location"></p>
+						<p>
+							<a href="" target="_blank" class="btn btn-primary" id="github_url">GitHub</a>
+							<a href="" target="_blank" class="btn btn-success" id="blog_url">Blog</a>
+						</p>
+					</div>
+
+					<div class="col-xs-6">
+						<h4>Projects</h4>
+						<ul id="repos"></ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-xs-1"></div>
+		</div>
+	</div>
+
+</body>
+</html>
