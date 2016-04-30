@@ -31,7 +31,7 @@ $(document).ready(function(){
 		if (e.which === 13) {
 			results();
 			e.preventDefault();
-			$('#githubName').attr('value', '');
+			$('#githubName').val('');
 		}s
 	});
 
@@ -45,6 +45,5 @@ $(document).ready(function(){
 			})
 		})
 	}
-
 
 });
