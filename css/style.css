@@ -5,3 +5,7 @@
 #avatar {
 	width: 150px;
 }
+
+.btn {
+	outline: none !important;
+}
