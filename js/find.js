@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 	function repos(argument){
 		var name = $('#githubName').val();
-		$.getJSON('https:/api.github.com/users/' + name + '/repos', function(repos){
+		$.getJSON('https://api.github.com/users/' + name + '/repos', function(repos){
 			$('#repos').empty();
 			console.log(repos);
 			repos.forEach(function(repo) {
