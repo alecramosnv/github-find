@@ -11,7 +11,7 @@ $(document).ready(function(){
 	function profile (event) {
 		var name = $('#githubName').val();
 		$('#result').show();
-		$.getJSON('https:/api.github.com/users/' + name, function(data){
+		$.getJSON('https://api.github.com/users/' + name, function(data){
 			console.log(data);
 			$('#location').text(data.location);
 			$('#name').text(data.name);
@@ -22,7 +22,7 @@ $(document).ready(function(){
 			$('#following').attr('href', 'https://github.com/' + name + '/following');
 			$('#starred').attr('href', 'https://github.com/stars/' + name);
 			$('#avatar').attr('src', data.avatar_url);
-			$('#blog_url').attr('href', data.blog);
+			$('#blog_url').attr('href', 'https://' + data.blog);
 			$('#github_url').attr('href', data.html_url);
 		})
 	}
